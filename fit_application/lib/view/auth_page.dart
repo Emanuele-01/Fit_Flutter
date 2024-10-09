@@ -8,9 +8,20 @@ class AuthPage extends StatefulWidget {
 }
 
 class _Authpage extends State<AuthPage> {
+  int num = 0;
+
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Center(
+      child: Column(
+        children: [
+          if (num > 0)
+            const Text(
+              "ciao",
+            )
+        ],
+      ),
+    );
     //throw UnimplementedError();
   }
 }
